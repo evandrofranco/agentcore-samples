@@ -240,7 +240,6 @@ def main():
         print("\n" + "=" * 60)
         print("Step 3: Invoke agent")
         print("=" * 60)
-        import boto3
         
         client = get_agentcore_client()
         session_id = str(uuid.uuid4()).upper()

@@ -1,6 +1,5 @@
 import os
 import boto3
-from botocore.loaders import Loader
 
 REGION = os.environ.get("AWS_DEFAULT_REGION")
 

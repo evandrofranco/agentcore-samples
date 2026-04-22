@@ -48,7 +48,7 @@ import botocore.exceptions
 # Add project root so helpers are importable
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 
-from helper.iam import create_harness_role, delete_harness_role
+from helper.iam import create_harness_role
 from helper.client import get_agentcore_client, get_agentcore_control_client
 
 REGION = os.getenv("AWS_DEFAULT_REGION")
@@ -241,7 +241,6 @@ def main(args=None):
     gateway_id = None
     target_id = None
     harness_id = None
-    created_role = False
 
     try:
         # ── Step 0: IAM role ──────────────────────────────────────────
@@ -253,7 +252,6 @@ def main(args=None):
             print(f"  Using provided role: {role_arn}")
         else:
             role_arn = create_harness_role()
-            created_role = True
             # Allow time for IAM propagation
             print("  Waiting for IAM propagation...")
             time.sleep(10)
