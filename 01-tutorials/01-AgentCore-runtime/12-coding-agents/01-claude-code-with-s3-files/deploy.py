@@ -350,8 +350,8 @@ def main():
     print(f"  Runtime ARN: {runtime['runtime_arn']}")
     if S3FILES_AP_ARN:
         print(f"  S3 Files mounted at: {S3FILES_MOUNT_PATH}")
-    print(f"  Config saved to: runtime_config.json")
-    print(f"\n  Test with: python invoke.py")
+    print("  Config saved to: runtime_config.json")
+    print("\n  Test with: python invoke.py")
     print("=" * 60)
 
 

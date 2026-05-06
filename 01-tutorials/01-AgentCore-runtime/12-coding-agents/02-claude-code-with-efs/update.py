@@ -145,7 +145,7 @@ def main():
     print("\n" + "=" * 60)
     print("Update complete!")
     print(f"  Runtime ARN: {runtime['runtime_arn']}")
-    print(f"  Config saved to: runtime_config.json")
+    print("  Config saved to: runtime_config.json")
     print("=" * 60)
 
 

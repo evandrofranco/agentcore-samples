@@ -122,7 +122,7 @@ def main():
         print()
 
     if session_id:
-        print(f"To continue this conversation:")
+        print("To continue this conversation:")
         print(f"  python invoke.py --session {session_id} \"your next prompt\"")
 
 

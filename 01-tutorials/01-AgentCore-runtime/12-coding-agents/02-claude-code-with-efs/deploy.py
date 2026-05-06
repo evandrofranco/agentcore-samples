@@ -273,8 +273,8 @@ def main():
     print(f"  Runtime ARN: {runtime['runtime_arn']}")
     if EFS_AP_ARN:
         print(f"  EFS mounted at: {EFS_MOUNT_PATH}")
-    print(f"  Config saved to: runtime_config.json")
-    print(f"\n  Test with: python invoke.py")
+    print("  Config saved to: runtime_config.json")
+    print("\n  Test with: python invoke.py")
     print("=" * 60)
 
 
